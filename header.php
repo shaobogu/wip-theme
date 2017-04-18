@@ -40,7 +40,7 @@
             <?php if (is_front_page()) : ?>
                 <div class="wip-carousel" 
                      style="background-image:url('<?php header_image() ?>')"> <!-- CHANGE_THIS -->
-                    
+                    <?php get_search_form() ?>
                 </div>
             <?php endif ?>
 	</header><!-- #masthead -->

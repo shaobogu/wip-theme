@@ -36,6 +36,13 @@
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'wip' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
+                
+            <?php if (is_front_page()) : ?>
+                <div class="wip-carousel" 
+                     style="background-image:url('<?php header_image() ?>')"> <!-- CHANGE_THIS -->
+                    
+                </div>
+            <?php endif ?>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

@@ -7,9 +7,11 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+                    
+                    <div onclick='WIPDirectory.createPost()'>Click Me</div>
 
 			<?php
-                        $query = new WP_Query(array('post_type' => 'post'));
+                        $query = new WP_Query(array('post_type' => 'wip_directory'));
                         if ( $query->have_posts() ) :
 
                                 /* Start the Loop */
@@ -34,5 +36,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

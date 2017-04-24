@@ -751,7 +751,8 @@ and open the template in the editor.
     .site-branding .wip-search-container .wip-search-icon {
       display: inline-block;
       height: 15px;
-      width: 15px; }
+      width: 15px;
+      cursor: pointer; }
   .site-branding .social-media-link-container {
     text-align: right;
     margin-right: 40px; }

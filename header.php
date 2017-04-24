@@ -40,7 +40,9 @@
                         <div class="social-media-link-container">
                             <img class="social-media-link-icon" src="<?php echo get_template_directory_uri() ?>/images/header/FacebookIcon.png">
                             <img class="social-media-link-icon" src="<?php echo get_template_directory_uri() ?>/images/header/InstagramIcon.png"> 
+                            <a href="https://twitter.com/WIPcenter">
                             <img class="social-media-link-icon" src="<?php echo get_template_directory_uri() ?>/images/header/TwitterIcon.png">
+                            </a>
                             <img class="social-media-link-icon" src="<?php echo get_template_directory_uri() ?>/images/header/YoutubeIcon.png">
                         </div>
                     </div>

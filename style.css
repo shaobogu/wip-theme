@@ -224,8 +224,8 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: sans-serif;
+  color: #6f6f6f;
+  font-family: "Open Sans";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -414,9 +414,11 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
+  color: #6f6f6f;
+  text-decoration: none;
+  /*	&:visited {
+  		color: $color__link-visited;
+  	}*/ }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -714,16 +716,230 @@ and open the template in the editor.
     Created on : Apr 15, 2017, 1:33:40 PM
     Author     : shaobo.gu
 */
-.wip-header {
-  height: 300px;
-  background-color: red; }
-  .wip-header .wip-logo {
-    width: 200px;
-    color: blue; }
+.site-branding {
+  height: 120px; }
+  .site-branding .wip-header {
+    display: inline-block; }
+  .site-branding .wip-logo-icon {
+    height: 100px;
+    width: 90px;
+    margin: 10px 0px 10px 20px;
+    display: inline-block; }
+  .site-branding .wip-logo-name {
+    display: inline-block;
+    padding: 30px 0px;
+    vertical-align: top;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold; }
+    .site-branding .wip-logo-name .wip-logo-name-I {
+      font-size: 36px;
+      color: #d952b2;
+      line-height: 1;
+      font-style: italic; }
+    .site-branding .wip-logo-name .wip-logo-name-II {
+      font-size: 24px;
+      font-style: italic; }
+  .site-branding .wip-header-right-container {
+    float: right; }
+  .site-branding .wip-search-container {
+    margin: 30px 19px 10px 0px; }
+    .site-branding .wip-search-container .wip-top-search-bar {
+      display: inline-block;
+      width: 200px;
+      margin-right: 3px;
+      color: #6f6f6f; }
+    .site-branding .wip-search-container .wip-search-icon {
+      display: inline-block;
+      height: 15px;
+      width: 15px; }
+  .site-branding .social-media-link-container {
+    text-align: right;
+    margin-right: 40px; }
+    .site-branding .social-media-link-container .social-media-link-icon {
+      display: inline-block;
+      height: 24px;
+      width: 24px;
+      margin: 0px 1px;
+      cursor: pointer; }
 
 .wip-primary-nav {
-  background-color: lightpink; }
+  background-color: #d952b2;
+  height: 40px; }
+  .wip-primary-nav .menu-title-bar-container {
+    padding-left: 23px; }
   .wip-primary-nav .menu-item {
-    padding: 5px 15px; }
+    display: inline-block;
+    line-height: 40px;
+    padding: 0px 23px;
+    cursor: pointer; }
+    .wip-primary-nav .menu-item:hover {
+      background-color: #e653c1; }
+  .wip-primary-nav a {
+    color: white; }
+
+.wip-carousel-container {
+  margin: 40px 50px 0px 50px;
+  position: relative; }
+  .wip-carousel-container .wip-carousel {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    max-width: none;
+    display: inline-block; }
+  .wip-carousel-container .wip-call-to-action-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 350px;
+    height: 290px;
+    padding: 10px 40px;
+    position: absolute;
+    bottom: 0;
+    right: 200px; }
+  .wip-carousel-container .wip-call-to-action-title {
+    font-size: 36px;
+    font-weight: bold; }
+  .wip-carousel-container .wip-call-to-action-description {
+    margin-top: 20px;
+    font-size: 14px; }
+  .wip-carousel-container .wip-call-to-action-button {
+    color: white;
+    background-color: #2ea5a6;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    width: 100px;
+    margin-top: 40px;
+    cursor: pointer; }
+    .wip-carousel-container .wip-call-to-action-button:hover {
+      background-color: #36bebf; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 17, 2017, 1:33:40 PM
+    Author     : anna.benson
+*/
+.wip-side-bar {
+  display: inline-block;
+  float: right;
+  width: 400px;
+  padding-left: 50px;
+  border-left: 1px solid #969696;
+  align-items: stretch; }
+  .wip-side-bar .wip-donate-button {
+    color: white;
+    background-color: #2ea5a6;
+    font-size: 36px;
+    text-align: center;
+    line-height: 100px;
+    height: 100px;
+    width: 350px;
+    cursor: pointer; }
+    .wip-side-bar .wip-donate-button:hover {
+      background-color: #36bebf; }
+  .wip-side-bar .wip-mission-statement-container {
+    padding: 40px 0px; }
+    .wip-side-bar .wip-mission-statement-container .wip-mission-statement-title {
+      font-size: 24px; }
+    .wip-side-bar .wip-mission-statement-container .wip-mission-statement-description {
+      padding-top: 20px;
+      font-size: 14px; }
+  .wip-side-bar .wip-upcoming-events-container {
+    padding-top: 20px; }
+    .wip-side-bar .wip-upcoming-events-container .wip-upcoming-events-title {
+      font-size: 24px; }
+    .wip-side-bar .wip-upcoming-events-container .wip-event-container {
+      padding-top: 30px; }
+      .wip-side-bar .wip-upcoming-events-container .wip-event-container .wip-event-title {
+        font-size: 18px; }
+      .wip-side-bar .wip-upcoming-events-container .wip-event-container .wip-event-date {
+        font-size: 14px; }
+      .wip-side-bar .wip-upcoming-events-container .wip-event-container .wip-event-description {
+        padding-top: 5px;
+        font-size: 14px; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 17, 2017, 1:33:40 PM
+    Author     : anna.benson
+*/
+.wip-page-footer {
+  font-size: 14px;
+  background-color: #d952b2;
+  color: white;
+  height: 90px;
+  bottom: 0;
+  width: 100%;
+  padding-top: 25px;
+  margin-top: 70px; }
+  .wip-page-footer .wip-footer-copyright {
+    margin-left: 40px;
+    display: inline-block; }
+  .wip-page-footer .wip-footer-address {
+    float: right;
+    padding-right: 30px;
+    display: inline-block; }
+  .wip-page-footer .wip-footer-contact {
+    float: right;
+    padding-right: 40px;
+    display: inline-block; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 17, 2017, 1:33:40 PM
+    Author     : anna.benson
+*/
+.content-area {
+  display: inline-block;
+  width: CALC(100% - 400px);
+  min-width: 400px;
+  padding-right: 40px; }
+  .content-area .wip-post:first-child {
+    border-top: 0;
+    padding-top: 0; }
+  .content-area .wip-post {
+    border-top: 1px solid #969696;
+    padding-top: 40px;
+    padding-bottom: 80px; }
+  .content-area .wip-post-date-icon {
+    display: inline-block;
+    vertical-align: top;
+    height: 100px;
+    width: 100px;
+    border: 1px solid #969696;
+    border-bottom: 10px solid #d952b2;
+    text-align: center;
+    padding-top: 20px; }
+    .content-area .wip-post-date-icon .wip-post-day {
+      font-size: 24px; }
+    .content-area .wip-post-date-icon .wip-post-year {
+      font-size: 14px; }
+  .content-area .wip-post-content {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+    width: calc(100% - 150px); }
+    .content-area .wip-post-content .wip-post-title {
+      font-size: 30px; }
+    .content-area .wip-post-content .wip-post-image {
+      height: 400px; }
+    .content-area .wip-post-content .wip-post-description {
+      font-size: 14px;
+      padding-top: 20px; }
+
+.site-content {
+  margin: 40px 50px;
+  display: flex; }
 
 /*# sourceMappingURL=style.css.map */

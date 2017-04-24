@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 17, 2017, 1:33:40 PM
+    Author     : anna.benson
+*/
+.wip-page-footer {
+    font-size: 14px;
+    background-color: #d952b2;
+    color: white;
+    height: 90px;
+    bottom:0;
+    width: 100%;
+    padding-top: 25px;
+    margin-top: 70px;
+
+    .wip-footer-copyright {
+      margin-left: 40px;
+      display: inline-block;
+    }
+
+    .wip-footer-address {
+      float: right;
+      padding-right: 30px;
+      display: inline-block;
+    }
+
+    .wip-footer-contact {
+      float: right;
+      padding-right: 40px;
+      display: inline-block;
+    }
+}

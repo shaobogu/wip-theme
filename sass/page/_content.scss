@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 17, 2017, 1:33:40 PM
+    Author     : anna.benson
+*/
+
+.content-area {
+  display: inline-block;
+  width: CALC(100% - 400px);
+  min-width: 400px;
+  padding-right: 40px;
+
+  .wip-post:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .wip-post {
+    border-top: 1px solid #969696;
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .wip-post-date-icon {
+    display: inline-block;
+    vertical-align: top;
+    height: 100px;
+    width: 100px;
+    border: 1px solid #969696;
+    border-bottom: 10px solid #d952b2;
+    text-align: center;
+    padding-top: 20px;
+
+    .wip-post-day {
+      font-size: 24px;
+    }
+    .wip-post-year {
+      font-size: 14px;
+    }
+
+  }
+
+  .wip-post-content {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+    width: calc(100% - 150px);
+
+    .wip-post-title {
+      font-size: 30px;
+    }
+
+    .wip-post-image {
+      height: 400px;
+    }
+
+    .wip-post-description {
+      font-size: 14px;
+      padding-top: 20px;
+    }
+  }
+}

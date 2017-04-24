@@ -9,3 +9,14 @@ and open the template in the editor.
 */
 
 @import "header";
+
+@import "sidebar";
+
+@import "footer";
+
+@import "content";
+
+.site-content {
+    margin: 40px 50px;
+    display: flex;
+}

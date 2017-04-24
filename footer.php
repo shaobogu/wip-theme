@@ -13,10 +13,10 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info"> <!-- CHANGE_THIS -->
+	<footer id="colophon" class="wip-page-footer" role="contentinfo">
+		<div class="site-info">
                     <?php dynamic_sidebar("footer-sidebar") ?>
-		</div><!-- .site-info -->
+		</div> 
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

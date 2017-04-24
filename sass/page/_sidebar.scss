@@ -1,0 +1,70 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 17, 2017, 1:33:40 PM
+    Author     : anna.benson
+*/
+
+.wip-side-bar {
+  display: inline-block;
+  float: right;
+  width: 400px;
+  padding-left: 50px;
+  border-left: 1px solid #969696;
+  align-items: stretch;
+
+  .wip-donate-button {
+    color: white;
+    background-color: #2ea5a6;
+    font-size: 36px;
+    text-align: center;
+    line-height: 100px;
+    height: 100px;
+    width: 350px;
+    cursor: pointer;
+    &:hover {
+      background-color: #36bebf;
+    }
+  }
+
+  .wip-mission-statement-container {
+    padding: 40px 0px;
+
+    .wip-mission-statement-title {
+      font-size: 24px;
+    }
+
+    .wip-mission-statement-description {
+      padding-top: 20px;
+      font-size: 14px;
+    }
+  }
+
+  .wip-upcoming-events-container {
+    padding-top: 20px;
+
+    .wip-upcoming-events-title {
+      font-size: 24px;
+    }
+
+    .wip-event-container {
+      padding-top: 30px;
+
+      .wip-event-title {
+        font-size: 18px;
+      }
+
+      .wip-event-date {
+        font-size: 14px;
+      }
+
+      .wip-event-description {
+        padding-top: 5px;
+        font-size: 14px;
+      }
+    }
+  } 
+}

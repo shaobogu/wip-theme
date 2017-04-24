@@ -1,9 +1,10 @@
 a {
-	color: $color__link;
+	color: #6f6f6f;
+        text-decoration: none;
 
-	&:visited {
+/*	&:visited {
 		color: $color__link-visited;
-	}
+	}*/
 	&:hover,
 	&:focus,
 	&:active {

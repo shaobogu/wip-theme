@@ -34,6 +34,7 @@
                         </div>
                     <div class="wip-header-right-container">
                         <div class="wip-search-container">
+                            <?php get_search_form() ?>
                             <input type="text" class="wip-top-search-bar" id="search-value" value="Search">
                             <img class="wip-search-icon" src="<?php echo get_template_directory_uri() ?>/images/header/SearchBarIcon.png">         
                         </div>
@@ -62,7 +63,7 @@
                         <h1 class="wip-call-to-action-title">Call to Action</h1>
                         <div class="wip-call-to-action-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
                         <div class="wip-call-to-action-button">Click Me</div>
-                    </div>    
+                    </div>
             <?php endif ?>
 	</header><!-- #masthead -->
 

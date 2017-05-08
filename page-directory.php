@@ -7,11 +7,22 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+                    <input type="hidden" id="wip-directory-categories-field" value="<?php echo get_option('wip_directory_categories'); ?>">
                     
-                    <div onclick='WIPDirectory.createPost()'>Click Me</div>
+                    <a href="<?php echo get_permalink( get_page_by_path( 'directory/create-directory' ) ) ?>">Create Post</a>
+                    <div id="wip-directory-categories-container"></div>
 
 			<?php
-                        $query = new WP_Query(array('post_type' => 'wip_directory'));
+                        $wip_directory_category = $_GET["category"];
+                        if ($wip_directory_category) :
+                            $query = new WP_Query(array(
+                                'post_type' => 'wip_directory', 
+                                'meta_key' => 'category', 
+                                'meta_value' => $wip_directory_category));
+                        else :
+                            $query = new WP_Query(array('post_type' => 'wip_directory'));
+                        endif;
+                        
                         if ( $query->have_posts() ) :
 
                                 /* Start the Loop */

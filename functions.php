@@ -130,8 +130,6 @@ function wip_scripts() {
 	}
         
         wp_enqueue_script( 'wp-api' );
-        
-        wp_enqueue_script( 'wip-directory', get_template_directory_uri() . '/js/directory.js', array('jquery'), null, true );
 }
 add_action( 'wp_enqueue_scripts', 'wip_scripts' );
 

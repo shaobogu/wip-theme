@@ -133,6 +133,11 @@ function wip_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'wip_scripts' );
 
+function set_user_admin_bar_false_by_default($user_id) {
+    update_user_meta( $user_id, 'show_admin_bar_front', 'false' );
+}
+add_action("user_register", "set_user_admin_bar_false_by_default");
+
 /**
  * Implement the Custom Header feature.
  */

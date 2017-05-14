@@ -34,18 +34,24 @@
                         </div>
                     <div class="wip-header-right-container">
                         <div class="wip-search-container">
-                            <?php get_search_form() ?>
-                            <input type="text" class="wip-top-search-bar" id="search-value" value="Search">
-                            <img class="wip-search-icon" src="<?php echo get_template_directory_uri() ?>/images/header/SearchBarIcon.png">         
+                            <?php get_search_form() ?>        
                         </div>
-                        <div class="social-media-link-container">
+                        <?php if ( is_user_logged_in() ) {
+                            global $current_user; 
+                            get_currentuserinfo(); ?>
+                        <div>Welcome <?php echo $current_user->user_login ?> 
+                            <a href="<?php echo wp_logout_url(); ?>">Logout</a></div>
+                        <?php } else { ?>
+                            <a href="<?php echo wp_login_url(get_permalink()); ?>">Login</a>
+                        <?php }?>
+<!--                        <div class="social-media-link-container">
                             <img class="social-media-link-icon" src="<?php echo get_template_directory_uri() ?>/images/header/FacebookIcon.png">
                             <img class="social-media-link-icon" src="<?php echo get_template_directory_uri() ?>/images/header/InstagramIcon.png"> 
                             <a href="https://twitter.com/WIPcenter">
                             <img class="social-media-link-icon" src="<?php echo get_template_directory_uri() ?>/images/header/TwitterIcon.png">
                             </a>
                             <img class="social-media-link-icon" src="<?php echo get_template_directory_uri() ?>/images/header/YoutubeIcon.png">
-                        </div>
+                        </div>-->
                     </div>
                     <div style="clear:both"></div>                
 		</div><!-- .site-branding -->          
